@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SPHNCSE.ML HOME</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel='manifest' href='/manifest.webmanifest'>
+     <!-- register service worker -->
+     <script>
+        if ('serviceWorker' in navigator) 
+            {
+              window.addEventListener('load', () => {
+              navigator.serviceWorker.register('./service-worker.js')
+              .then(() => { console.log("[ PWA Fire Bundle ] Service Worker Registered"); });
+            } ); 
+          }  
+          </script>
+          <!-- start of Web Manifest -->
+    <link rel="manifest" href="./app.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8" type="text/html">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Header added Here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://sphncse.ml"><img src="../assets/sphncselogo.png" width="35" height="35"></img>SPHNCSE.ML</a>
+        <img src="assets/digital_logo.gif" width="150" height="35"></img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="https://sphncse.ml">
+                        <h4>A PAPERLESS CAMPUS INITIAVITE</h4>
+                    </a>
+                </li>
+            </ul>
+            <!--A PAPERLESS  CAMPUS INITIAVITE     -->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#moveFooter"><img src="https://img.icons8.com/nolan/50/000000/contact-card.png" width="35" height="35">Contact Us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ourTeam.html" target="_blank"><img src="https://img.icons8.com/plasticine/100/000000/conference.png" width="35" height="35"> Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <button onclick="install()">
+        Install
+      </button>
+    <!--body Started Here added Here-->
+    <div class="wrapper">
+        <div class="item-bg"></div>
+        <div class="news-slider">
+            <div class="news-slider__wrp swiper-wrapper">
+
+                <!--slider 3-->
+                <!--slider 1-->
+                <div class="news-slider__item swiper-slide">
+
+                    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel"  data-interval="2000">
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/cse-group-photo-720x480.jpg" alt="Los Angeles" width="1100" height="500">
+                                <div class="carousel-caption">
+                                    <h3>JULY EVENTS</h3>
+                                    <p>
+                                        <a href="julyEvents.html" target="_blank">
+                                            <button class="btn btn-primary">
+                                            <span class="spinner-grow spinner-grow-sm"></span>
+                                                 SEE MORE
+                                        </button>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/cse-hod-ondesk.jpg" alt="Chicago" width="1100" height="500">
+                                <div class="carousel-caption">
+                                    <h3>AUGUST EVENTS</h3>
+                                    <p>
+                                        <a href="augustEvents.html" target="_blank">
+                                            <button class="btn btn-primary">
+                                               <span class="spinner-grow spinner-grow-sm"></span>
+                                                 SEE MORE
+                                        </button>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!--slider 2-->
+               
+                <!--end of all sliders slider 1-->
+
+                <!--slider 1-->
+                <div class="news-slider__item swiper-slide">
+                    <a href="magazine.html" target="_blank" class="news__item">
+                        <div class="news__title">
+                            MAGAZINE
+                        </div>
+                        <p class="news__txt">
+                            The College Magazine team works to Entice the annual information about Faculty and Students -publication by Sphoorthy Engineering College - DEPARTMENT OF CSE .
+                        </p>
+                        <div class="news-date">
+                            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm "></span>
+                Read More
+              </button>
+                        </div>
+                        <div class="news__img">
+                            <img src="assets/magazine_photo.jpeg" alt="news">
+                        </div>
+                    </a>
+                </div>
+                <!--slider 2-->
+                <div class="news-slider__item swiper-slide">
+                    <a href="newsLetter.html" target="_blank" class="news__item">
+                        <div class="news__title">
+                            NEWS LETTER
+                        </div>
+                        <p class="news__txt">
+                            The Department of CSE from Sphoorthy Engineering College Presents You The Monthly News Letters.
+                        </p>
+                        <div class="news-date">
+                            <button class="btn btn-primary" disabled>
+                <span class="spinner-grow spinner-grow-sm "></span>
+                Read More
+              </button>
+                        </div>
+                        <div class="news__img">
+                            <img src="assets/newsletter_photo.png" alt="news">
+                        </div>
+                    </a>
+                </div>
+
+                <!--end of all sliders slider 1-->
+                
+                
+                <!--end of all sliders slider 1-->
+                
+                
+                <!--end of all sliders slider 1-->
+
+
+            </div>
+        </div>
+    </div>
+    <!--add footer here-->
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer id="moveFooter"class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Address</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li><a href="#">Sagar Road,Nadargul Village, Near Vanasthalipuram, Saroornagar Mandal, Hyderabad,
+                    Telangana 501510.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Contacts</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:sphncseevents@gmail.com">Email: sphncseevents@gmail.com
+                                     </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+919989301354` ">Phone: +91 9989301354</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class=" col-md-3 col-sm-6 ">
+                     <!--Column1-->
+                     <div class=" footer-pad ">
+                        <h4>Feedback</h4>
+                        <ul class=" list-unstyled ">
+                           <li><a href=" # ">Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</a></li>
+                           <li><a href=" # "></a></li>
+                           <li>
+                              <a href=" # "></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class=" col-md-3 ">
+                     <h4>Follow Us</h4>
+                     <ul class=" social-network social-circle ">
+                        <li><a href="https://www.facebook.com/tulsirammehtere "  target="_blank " class=" icoFacebook " title=" Facebook "><i class=" fa fa-facebook "></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tulsiram-methre-3b0348122/ " target="_blank " class=" icoLinkedin " title=" Linkedin "><i class=" fa fa-linkedin "></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class=" row ">
+                  <div class=" col-md-12 copy ">
+                     <p class=" text-center ">&copy;  Copyright 2019 - SPHNCSE.ML.  All rights reserved..</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer -->
+      <script>
+          // This is the "Offline copy of pages" service worker
+// This is the "Offline copy of pages" service worker
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+    } else {
+      console.log('User chose to not install your PWA');
+    }
+
+    deferredPrompt = null;
+
+    });
+
+
+  }
+}
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+
+      </script>
+      <!--Ende here-->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+      <script src=" ./script.js "></script>
+      <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin=" anonymous "></script>
+      <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity=" sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin=" anonymous "></script>
+      <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity=" sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin=" anonymous "></script>     
+   </body>
+</html>

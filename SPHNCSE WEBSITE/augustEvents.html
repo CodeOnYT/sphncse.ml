@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>August Eventsr</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel='manifest' href='/manifest.webmanifest'>
+    <!-- register service worker -->
+    <script>
+      if ('serviceWorker' in navigator) 
+          {
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./service-worker.js')
+            .then(() => { console.log("[ PWA Fire Bundle ] Service Worker Registered"); });
+          } ); 
+        }  
+        </script>
+        <!-- start of Web Manifest -->
+    <link rel="manifest" href="./app.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8" type="text/html">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+            div.gallery {
+              border: 1px solid #ccc;
+            }
+            
+            div.gallery:hover {
+              border: 1px solid #777;
+            }
+            
+            div.gallery img {
+              width: 100%;
+              height: auto;
+            }
+            
+            div.desc {
+              padding: 15px;
+              text-align: center;
+              background-color:azure;
+            }
+            
+            * {
+              box-sizing: border-box;
+            }
+            
+            .responsive {
+              padding: 0 6px;
+              float: left;
+              width: 24.99999%;
+            }
+            
+            @media only screen and (max-width: 700px) {
+              .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+              }
+            }
+            
+            @media only screen and (max-width: 500px) {
+              .responsive {
+                width: 100%;
+              }
+            }
+            
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            </style>
+</head>
+
+<body>
+    <!--Header added Here-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://sphncse.ml"><img src="../assets/sphncselogo.png" width="35"
+                height="35"></img>SPHNCSE.ML</a>
+        <img src="assets/digital_logo.gif" width="150" height="35"></img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-center" href="https://sphncse.ml">
+                        <h4>A PAPERLESS CAMPUS INITIAVITE</h4>
+                    </a>
+                </li>
+            </ul>
+            <!--A PAPERLESS  CAMPUS INITIAVITE     -->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#moveFooter"><img
+                                    src="https://img.icons8.com/nolan/50/000000/contact-card.png" width="35"
+                                    height="35">Contact Us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ourTeam.html" target="_blank"><img
+                                    src="https://img.icons8.com/plasticine/100/000000/conference.png" width="35"
+                                    height="35"> Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <button onclick="install()">
+      Install
+    </button>
+    <!--add august event photos  here-->
+   <div class="row">
+    <!-- Page Content -->
+  
+<div class="responsive">
+        <div class="gallery col">
+          <a target="_blank" href="assets/cse-hod-ondesk.jpg">
+            <img src="assets/cse-hod-ondesk.jpg" alt="Cinque Terre" width="400" height="400">
+          </a>
+          <div class="desc">CSE HOD ADDRESSING ON 15TH AUGUST</div>
+        </div>
+      </div>
+      
+      
+      <div class="responsive col">
+        <div class="gallery">
+          <a target="_blank" href="assets/award cermoony.jpg">
+            <img src="assets/award cermoony.jpg" alt="Forest" width="400" height="400">
+          </a>
+          <div class="desc">AWARD CEREMONY ON 15TH AUGUST      _...</div>
+        </div>
+      </div>
+      
+      <div class="responsive col">
+        <div class="gallery">
+          <a target="_blank" href="assets/award to nihitha.jpg">
+            <img src="assets/award to nihitha.jpg" alt="Northern Lights" width="400" height="400">
+          </a>
+          <div class="desc">NIHITHA WAS AWARDED FOR COMPLETION OF BEC CERTIFICATION</div>
+        </div>
+      </div>
+      
+      <div class="responsive col">
+        <div class="gallery">
+          <a target="_blank" href="assets/magazine release.jpg">
+            <img src="assets/magazine release.jpg" alt="Mountains" width="400" height="400">
+          </a>
+          <div class="desc">RELEASE OF CSE DEPARTMENT MAGAZINE - INSPIRE</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="responsive col">
+            <div class="gallery">
+              <a target="_blank" href="assets/1st-year-orientation-720x540.jpg">
+                <img src="assets/1st-year-orientation-720x540.jpg" alt="Cinque Terre" width="400" height="400">
+              </a>
+              <div class="desc">1ST YEAR ORIENTATION</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive col">
+            <div class="gallery">
+              <a target="_blank" href="assets/hod-interaction-3rd-year-720x540.jpg">
+                <img src="assets/hod-interaction-3rd-year-720x540.jpg" alt="Forest" width="400" height="400">
+              </a>
+              <div class="desc">HOD INTERACTION WITH STUDENTS</div>
+            </div>
+          </div>
+          
+          <div class="responsive col">
+            <div class="gallery">
+              <a target="_blank" href="assets/harith-haram-720x540.jpg">
+                <img src="assets/harith-haram-720x540.jpg" alt="Northern Lights" width="400" height="400">
+              </a>
+              <div class="desc">HARITHA HAARAM PROGRAM</div>
+            </div>
+          </div>
+          
+          <div class="responsive col">
+            <div class="gallery">
+              <a target="_blank" href="assets/tcs-nqte-720x540.jpg">
+                <img src="assets/tcs-nqte-720x540.jpg" alt="Mountains" width="400" height="400">
+              </a>
+              <div class="desc ">TCS NQTE QUALIFIERS</div>
+            </div>
+          </div>
+      
+          <div class="clearfix"></div>
+ 
+      </div>
+    
+    <!-- /.container -->
+    <!-- end august event photos here-->
+    <!-- Footer -->
+    <div>
+    <footer id="moveFooter" class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Address</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li><a href="#">Sagar Road,Nadargul Village, Near Vanasthalipuram, Saroornagar Mandal,
+                                        Hyderabad,
+                                        Telangana 501510.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Contacts</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:sphncseevents@gmail.com">Email: sphncseevents@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+919989301354` ">Phone: +91 9989301354</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-6 ">
+                        <!--Column1-->
+                        <div class=" footer-pad ">
+                            <h4>Feedback</h4>
+                            <ul class=" list-unstyled ">
+                                <li><a href=" # ">Please send us your ideas, bug reports, suggestions! Any feedback
+                                        would be appreciated.</a></li>
+                                <li><a href=" # "></a></li>
+                                <li>
+                                    <a href=" # "></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 ">
+                        <h4>Follow Us</h4>
+                        <ul class=" social-network social-circle ">
+                            <li><a href="https://www.facebook.com/tulsirammehtere " target="_blank "
+                                    class=" icoFacebook " title=" Facebook "><i class=" fa fa-facebook "></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/tulsiram-methre-3b0348122/ " target="_blank "
+                                    class=" icoLinkedin " title=" Linkedin "><i class=" fa fa-linkedin "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" row ">
+                    <div class=" col-md-12 copy ">
+                        <p class=" text-center ">&copy; Copyright 2019 - SPHNCSE.ML. All rights reserved..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <!-- Footer -->
+    <script>
+        // This is the "Offline copy of pages" service worker
+// This is the "Offline copy of pages" service worker
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+});
+
+async function install() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    console.log(deferredPrompt)
+    deferredPrompt.userChoice.then(function(choiceResult){
+
+      if (choiceResult.outcome === 'accepted') {
+      console.log('Your PWA has been installed');
+    } else {
+      console.log('User chose to not install your PWA');
+    }
+
+    deferredPrompt = null;
+
+    });
+
+
+  }
+}
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+if (navigator.serviceWorker.controller) {
+  console.log("[PWA Builder] active service worker found, no need to register");
+} else {
+  // Register the service worker
+  navigator.serviceWorker
+    .register("pwabuilder-sw.js", {
+      scope: "./"
+    })
+    .then(function (reg) {
+      console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+    });
+}
+}
+
+    </script>
+    <!--Ende here-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src=" ./script.js "></script>
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin=" anonymous "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity=" sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+        crossorigin=" anonymous "></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity=" sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin=" anonymous "></script>
+</body>
+
+</html>

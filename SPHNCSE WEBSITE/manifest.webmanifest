@@ -1,0 +1,14 @@
+{"name" : "https://Sphncse.ml",
+    "short_name" : "sphncse",
+    "description" : "Sphn Cse Website were You can Read Magazines Published By The Department of Cse At Sphoorthy Engineering College.",
+    "start_url" : "https://sphncse.ml",
+    "display" : "fullscreen",
+    "orientation" : "any",
+    "lang" : "English",
+    "scope" : "",
+    "icons" : [
+        {
+            "src": "[Embedded]",
+            "sizes": "105x107"
+        }
+    ]}
